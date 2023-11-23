@@ -2,21 +2,19 @@
 #include<stdio.h>
 main()
 {
-	int st=1;
-	int end=50;
-	int sum=17;
-	printf("2 3 5 7 ");
+	int x=1;
+	int sum=0;
 	
-	start:
-	if(st<=end)
+	n:
+	if(x<=50)
 	{
-		st++;
-		if(st%2!=0 && st%3!=0 && st%5!=0 && st%7!=0)
+		x++;
+		if(x%2!=0 && x%3!=0 && x%5!=0 && x%7!=0 || x==2 || x==3 || x==5 || x==7)
 		{
-			printf("%d ",st);
-			sum=sum+st;
+			printf("%d ",x);
+			sum=sum+x;
 		}
-		goto start;
+		goto n;
 	}
 	printf("\n ans :%d",sum);
 }
