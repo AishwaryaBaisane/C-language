@@ -2,10 +2,10 @@
 #include<stdio.h>
 main()
 {
-	//17
+	
 	int x;
 	printf("enter x :");
 	scanf("%d",&x);
 	
-	printf("%d",x%1==0 && x/x==1 && x%2!=0);
+	printf("%d",x%2!=0 && x%3!=0 && x%5!=0 && x%7!=0);
 }
