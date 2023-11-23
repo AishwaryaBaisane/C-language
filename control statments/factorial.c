@@ -11,7 +11,7 @@ int main()
 	
 	n:
 	sum=sum*n;
-    n--;
+        n--;
 	
 	if(n>=1)
 	{
