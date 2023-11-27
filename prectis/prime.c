@@ -1,11 +1,26 @@
-//prime
 #include<stdio.h>
-main()
-{
+int main()
+{	
+    //find number is prime or not   
+	int n,a=0;
+	printf("enter n:");
+	scanf("%d",&n);
+
+	int i;
+	for(i=1;i<=n;i++)
+	{
+			if(n%i==0)
+			{
+				a++;
+			}
+	}
+	if(a==2)
+		{
+			printf("number is prime");
+		}
+		else
+		{
+			printf("number is not prime"); 
+		}
 	
-	int x;
-	printf("enter x :");
-	scanf("%d",&x);
-	
-	printf("%d",x%2!=0 && x%3!=0 && x%5!=0 && x%7!=0);
 }
