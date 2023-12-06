@@ -18,10 +18,15 @@ main()
 	scanf("%d",&l);
 	
 	int count=0;
-	for(i=f; i<l; i++)
+	
+	for(i=f; i<=l; i++)
 	{
-	  f=f+4;
-	  printf("%d ",f);
+	  if(i%4==0)
+	  {
+	  	printf("%d ",i);
+	  	count++;
+	  }
 	}
+	printf("\ntota leap year :%d",count);
 
 }
