@@ -17,11 +17,11 @@ main()
 	{
 		for(j=i+1; j<=n; j++)
 		{
-			if(a[j]<a[i])
+			if(a[j]>a[i])
 			{
-			tmp=a[i];
-			a[i]=a[j];
-			a[j]=tmp;
+			tmp=a[j];
+			a[j]=a[i];
+			a[i]=tmp;
 		    }
 		}
 	}

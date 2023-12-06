@@ -1,3 +1,4 @@
+//Q.4 Wap to find maximum from the 1d array.
 #include<stdio.h>
 main()
 {
@@ -5,31 +6,21 @@ main()
 	printf("enter n:");
 	scanf("%d",&n);
 	int a[n];
-	int i,j;
-	int tmp;
+	int i;
 	for(i=0; i<=n; i++)
 	{
 		
 		printf("enter a[%d]",i);
 		scanf("%d",&a[i]);
 	}
+	int max=0;
 	for(i=0; i<=n; i++)
 	{
-		for(j=i+1; j<=n; j++)
-		{
-			if(a[j]<a[i])
-			{
-			tmp=a[i];
-			a[i]=a[j];
-			a[j]=tmp;
-		    }
-		}
-	}
-	for(i=0; i<=n; i++)
+	
+	if(a[i]>max)
 	{
-		
-		printf("%d ",a[i]);
-	;
+	   	max=a[i];
 	}
-
+   }
+	printf("%d",max);
 }
