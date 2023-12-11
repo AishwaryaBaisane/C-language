@@ -7,17 +7,21 @@ main()
 	scanf("%d",&n);
 	int i,j;
 	int a[n];
-
+	
 	for(i=0; i<n; i++)
 	{
 		printf("enter a[%d]",i);
 		scanf("%d",&a[i]);
 	}
+	int x;
+	printf("enter value :");
+	scanf("%d",&x);
+	
 	for(i=0; i<n; i++)
 	{
 		for(j=i+1; j<n; j++)
 		{
-			if(a[i]+a[j]==5)
+			if(a[i]+a[j]==x)
 			{
 				printf("%d,%d\n",a[i],a[j]);
 			}
