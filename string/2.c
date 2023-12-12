@@ -9,9 +9,14 @@ main()
 	printf("enter name :");	
 	scanf("%s",&a);
 	int i;
-	for(i=0; i<n; i++)
+	for(i=0; i<n*4; i++)
 	{
-     	printf("%c\n",a[i]+32);
-     }
-	
+	   if(a[i]>='A'&&a[i]<='Z')
+          {
+            a[i]=a[i]+32;
+          }
+        }
+        printf("%s",a);
+     
+
 }
