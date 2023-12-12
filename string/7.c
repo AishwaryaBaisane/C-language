@@ -9,17 +9,31 @@ main()
 	char a[n];
 	printf("enter name :");	
 	scanf("%s",&a);
-	int i;
-	for(i=0; i<n; i++)
+	int i,x;
+	
+	if(a[0]>=97)
 	{
-     	printf("%c",a[i]+32);
-     	goto x;
-    }
-    x:
-   	for(i=i+1; i<n; i++)
-	{
-     printf("%c",a[i]);
-    }
-
-
+		a[0]=a[0]-32;
+	}
+    int length = sizeof(a);
+    for(i=0; i<n*4; i++)
+    {
+    	if(a[i]==' ')
+    	{
+    		if(a[i+1]>=97)
+    		{
+    	    	a[i-1]-=32;
+    		
+			}
+			
+		}
+	
+       
+	}
+    printf("%s",a);
+	
+    
+    
 }
+
+
