@@ -15,15 +15,16 @@ main()
 	{
 		if(a[i]>=97&&a[i]<=122)
 		{
-     	         printf("%c",a[i]-32);
-        	goto x;
+     	        printf("%c",a[i]-32);
+     
                 }
-        }
-    x:
-   for(i=i+1; i<n; i++)
-    {
-     printf("%c",a[i]);
-    }
-
+               else
+               {
+                 for(i=0; i<n; i++)
+	          {
+                    printf("%c",a[i]);
+                   }	
+	        }
+       }
 
 }
