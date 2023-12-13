@@ -1,10 +1,11 @@
 //6. WAP to convert given string in Title Case.
 #include<stdio.h>
+#include<string.h>
 main()
 {
 	char a[100];
 	
-	printf("Enter The Any 100 Word : ");
+	printf("Enter string  : ");
 	gets(a);
 	
 	int lent=strlen(a);
