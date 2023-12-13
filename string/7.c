@@ -2,38 +2,35 @@
 #include<stdio.h>
 main()
 {
-
-	int n;
-	printf("enter n :");
-	scanf("%d",&n);
-	char a[n];
-	printf("enter name :");	
-	scanf("%s",&a);
-	int i,x;
+	char a[100];
 	
-	if(a[0]>=97)
+	printf("Enter The Any 100 Word : ");
+	gets(a);
+	
+	int lent=strlen(a);
+	
+	if(a[0]>='a' && a[0]<='z')
 	{
 		a[0]=a[0]-32;
 	}
-    int length = sizeof(a);
-    for(i=0; i<n*4; i++)
-    {
-    	if(a[i]==' ')
-    	{
-    		if(a[i+1]>=97)
-    		{
-    	    	a[i-1]-=32;
-    		
+	
+	int i;
+	
+	for(i=1; i<lent;i++)
+	{
+		if(a[i-1]==' ')
+		{
+			if(a[i]>='a' && a[i]<='z')
+			{
+				a[i]=a[i]-32;
 			}
-			
 		}
-	
-       
+		else if(a[i]>='A' && a[i]<='Z')
+		{
+			a[i]=a[i]+32;
+		}
 	}
-    printf("%s",a);
-	
-    
-    
+	puts(a);
 }
 
 
