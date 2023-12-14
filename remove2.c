@@ -2,25 +2,30 @@
 #include<conio.h>
 #include<string.h>
 
-void main()
+int main()
 {
 	char a[100];
-	printf("Enter Any Character frequency : ");
+	printf("Enter string : ");
 	gets(a);
 	
 	int l=strlen(a);
-	int check=0,i,j;
-	for(i=0; i!='\0'; i++)
+	int check=1,i,j;
+	for(i=0; i<l; i++)
 	{
-		if(a[i]==a[i+1])
-		{
-			for(j=0; j!='\0'; j++)
-			{
-		    	a[j]=a[j+1];
-			}
-			i--;
-	    }  
-	  
+	   for(j=i+1; j<l; j++)
+	   {
+	   	  if(a[i]==a[j])
+	   	  {
+	   	  
+	   	  	a[j]=0;
+		   }
+	   }
+	   
+	   if(a[i]!=0)
+	   {
+		printf("%c",a[i]);
+	   }
+	   check=1;
 	}
-	puts(a);
+
 }
