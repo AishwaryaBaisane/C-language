@@ -1,14 +1,13 @@
 //3. WAP to given string length.
+
 #include<stdio.h>
 main()
 { 
-    int i,n;
-    printf("enter n:");
-    scanf("%d",&n);
-	char a[n];
+
+	char a[100];
 	printf("enter name :");	
 	scanf("%s",&a);
-
+    int i;
     int count=0;
     for(i=0; a[i]!=0; i++)
     {
@@ -16,5 +15,5 @@ main()
 		
     }
 	printf("%d",count);
-	printf("\n%d",sizeof(a)/sizeof(a[n]));	
+
 }
