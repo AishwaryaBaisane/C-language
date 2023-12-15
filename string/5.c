@@ -1,25 +1,27 @@
 //4. WAP to given string in reverse.
 #include<stdio.h>
+#include<string.h>
 main()
 {
-	int n;
-	int i,j;
-    printf("enter n :");
-    scanf("%d",&n);
-	char a[n];
+	
+	int i,j,tmp;
+    
+	char a[200];
 	printf("enter name :");	
-	scanf("%s",&a);
-	for(i=0; i<n; i++)
+    gets(a);
+	int l= strlen(a);
+	
+	for(i=0; i<l; i++)
 	{
-		for(j=i+1; j<n; j++)
+		for(j=i+1; j<l; j++)
 		{
 		
-		a[n]=a[i];
+		tmp=a[i];
 		a[i]=a[j];
-		a[j]=a[n];
+		a[j]=tmp;
 	  }
 	}
-	for(i=0; i<n; i++)
+	for(i=0; i<l; i++)
 	{
 	   	printf("%c",a[i]);	
 	}
