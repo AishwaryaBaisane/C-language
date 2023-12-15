@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 
-void main()
+int main()
 {
 	char a[100];
 	printf("Enter Any Character frequency : ");
