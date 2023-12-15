@@ -1,30 +1,20 @@
 //5. WAP to convert given string in Toggal Case.
 
 #include<stdio.h>
-main()
-{
+#include<String.h>
 
+int main()
+{
 	int n;
-	printf("enter n :");
+	printf("Enter the V\value of string : ");
 	scanf("%d",&n);
 	char a[n];
-	printf("enter name :");	
+	printf("Enter The String : ");
 	scanf("%s",&a);
-	int i;
-	for(i=0; i<n; i++)
+	int i=0;
+	if(a[0]>='a' && a[0]<='z')
 	{
-		if(a[i]>=97&&a[i]<=122)
-		{
-     	        printf("%c",a[i]-32);
-     
-                }
-               else
-               {
-                 for(i=0; i<n; i++)
-	          {
-                    printf("%c",a[i]);
-                   }	
-	        }
-       }
-
+		a[0]=a[0]-32;
+	}
+	printf("%s",a);
 }
