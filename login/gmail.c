@@ -69,7 +69,7 @@ int main()
 		else
 		{
 		
-			printf("error : keep @gmail.com together");
+			printf("error : enter valid gmail && keep @gmail.com together");
 			goto start;
 		}
   }
