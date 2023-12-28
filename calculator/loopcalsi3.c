@@ -18,7 +18,7 @@ int calsi()
 	printf("Press 4 for *\n");
 	printf("Press 5 for %%\n");
 	printf("Press 0 for the exit");
-	printf("enter choise :\n");
+	printf("enter choise :");
 	scanf("%d",&ans);
 	printf("Enter the first numbe :");
 	scanf("%d",&a);
@@ -32,15 +32,15 @@ int calsi()
 		}
 	switch(ans)
 	{
-        case 1 : printf("Addition %d + %d = %d",a,b,a+b);
+        case 1 : printf("Addition %d + %d = %d\n",a,b,a+b);
 	     break;
-		case 2 : printf("substrect%d - %d = %d",a,b,a-b);
+		case 2 : printf("substrect%d - %d = %d\n",a,b,a-b);
 	     break;
-		case 3 : printf("into %d * %d = %d",a,b,a*b);
+		case 3 : printf("into %d * %d = %d\n",a,b,a*b);
          break;
-		case 4 : printf("divisible%d / %d = %d",a,b,a/b);
+		case 4 : printf("divisible%d / %d = %d\n",a,b,a/b);
         break;
-	    case 5 : printf("modul %d % %d = %d",a,b,a%b);
+	    case 5 : printf("modul %d % %d = %d\n",a,b,a%b);
 	     break;
 	   
 		
