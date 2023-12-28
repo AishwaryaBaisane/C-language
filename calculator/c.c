@@ -24,18 +24,18 @@ int calsi()
 	printf("\n");
 	switch(ans)
 	{
-        case 1 : printf("Addition %d + %d = %d",a,b,a+b);
+                case 1 : printf("Addition %d + %d = %d\n",a,b,a+b);
 		goto start;
-		case 2 : printf("substrect%d - %d = %d",a,b,a-b);
+		case 2 : printf("substrect%d - %d = %d\n",a,b,a-b);
 		goto start;
-		case 3 : printf("into %d * %d = %d",a,b,a*b);
-    	goto start;
-		case 4 : printf("divisible%d / %d = %d",a,b,a/b);
-	    goto start;
-	    case 5 : printf("modul %d % %d = %d",a,b,a%b);
-	    goto start;
-	    case 0 :printf("Thank you for using calculator");
-	    break;
+		case 3 : printf("into %d * %d = %d\n",a,b,a*b);
+    	        goto start;
+		case 4 : printf("divisible%d / %d = %d\n",a,b,a/b);
+	        goto start;
+	        case 5 : printf("modul %d % %d = %d\n",a,b,a%b);
+	        goto start;
+	         case 0 :printf("Thank you for using calculator");
+	         break;
 	
 		
 	}
