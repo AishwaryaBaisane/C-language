@@ -14,7 +14,7 @@ int calsi()
 	printf("Press 3 for /\n");
 	printf("Press 4 for *\n");
 	printf("Press 5 for %%\n");
-	printf("Press 0 for the exit");
+	printf("Press 0 for the exit\n");
 	printf("enter choise :\n");
 	scanf("%d",&ans);
 	printf("Enter the first numbe :");
