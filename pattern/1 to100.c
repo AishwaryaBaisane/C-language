@@ -12,6 +12,10 @@ int main()
 		for(j=i ;j<=10 ;j++)
 		{ 
 			printf(" %d",k);
+			if(k>=1&&k<=9)
+			{
+			  printf(" ");
+			}
 			k=k+j;
     	}
 		for(j=9; j>=i; j--)
