@@ -10,8 +10,9 @@ void cube(int n)
 	{
 		for(j=0; j<n; j++)
 		{
-		 printf("enter array a[%d][%d]",i,j);
-		 scanf("%d",&a[i][j]);
+		 // printf("enter array a[%d][%d]",i,j);
+		 // scanf("%d",&a[i][j]);
+	      
 		}
 		
    }
@@ -20,8 +21,11 @@ void cube(int n)
 	{
 		for(j=0; j<n; j++)
 		{
-		    a[i][j] = a[i][j] * a[i][j]* a[i][j];
-	     	printf("%d ",a[i][j]);	
+		    // a[i][j] = a[i][j] * a[i][j]* a[i][j];
+	          // printf("%d ",a[i][j]);	
+	        int *ptr=&a[i][j];
+	       *ptr = *ptr * *ptr * *ptr;
+               printf(" %d ",*ptr);
 		}
 	  	
 	}
