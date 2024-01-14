@@ -23,7 +23,7 @@ int deal(int gun,int gun1,int gun2)
 int roky()
 {
 	int x=10;
-	x=x+deal(pass(),pass1(),pass2());
+	x = x + deal(pass(),pass1(),pass2());
 	return x;
 }
 
