@@ -18,8 +18,8 @@ int main()
 
     for(i=0; i<=5; i++)   
 	{
-		printf("enter student detael :-");
-		printf("\nenter roll number:",i+1);
+		printf("enter %d student details :-",i+1);
+		printf("\nenter roll number:");
 		scanf("%d",&stu.roll_no);
 		
 		printf("enter name :");
